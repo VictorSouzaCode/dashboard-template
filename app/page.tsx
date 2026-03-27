@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-// Now i need to build everything again
-// easy right, start with creating the folders
+// I think i will copy the login and sign-up page next
+// redirect this page here to the dashboard page
+// then do a fake sidebar, a fake header, and build the layout
 
 export default function Home() {
   return (
