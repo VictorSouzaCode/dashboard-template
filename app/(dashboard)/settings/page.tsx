@@ -1,8 +1,9 @@
+import Settingsclient from "./Settingsclient"
 
 
 const SettingsPage = () => {
   return (
-    <div>SettingsPage</div>
+    <Settingsclient/>
   )
 }
 
