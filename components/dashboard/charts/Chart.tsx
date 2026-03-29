@@ -26,7 +26,7 @@ const data = [
 
 const Chart = () => {
   return (
-    <Card className="h-full">
+    <Card className="h-[420px]">
       <CardHeader>
         <CardTitle>Revenue Overview</CardTitle>
       </CardHeader>

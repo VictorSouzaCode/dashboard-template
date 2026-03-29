@@ -29,7 +29,7 @@ const SidebarNav = ({ items }: SidebarNavProps) => {
       {/* <SidebarGroupLabel>{label}</SidebarGroupLabel> */}
 
       <SidebarGroupContent>
-        <SidebarMenu>
+        <SidebarMenu className="flex flex-col gap-1">
           {items.map((item) => {
             const isLogout = item.function === "logout";
 
@@ -47,7 +47,7 @@ const SidebarNav = ({ items }: SidebarNavProps) => {
                       <span>{item.title}</span>
                     </div>
                   ) : (
-                    <Link href={item.href} className="flex items-center gap-3 px-3">
+                    <Link href={item.href} className="flex items-center gap-4 px-3">
                       <item.icon/>
                       <span>{item.title}</span>
                     </Link>

@@ -1,5 +1,7 @@
 import KpiCards from "@/components/dashboard/cards/KpiCards"
 import Chart from "@/components/dashboard/charts/Chart"
+import TableComponent from "@/components/dashboard/tables/TableComponent"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
 const DashboardHome = () => {
   return (
@@ -11,9 +13,19 @@ const DashboardHome = () => {
           <KpiCards title="Completed Orders" value='2.000' />
       </div>
 
-      <section className="flex-1 min-h-0 font-sans">
+      <section className="flex-1 min-h-0">
         <Chart/>
       </section>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Recent Activity</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <TableComponent/>
+        </CardContent>
+      </Card>
+      
     </div>
 )
 }
