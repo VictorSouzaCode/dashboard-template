@@ -1,11 +1,8 @@
 'use client'
-import Image from "next/image";
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-// the chart is ready
-// i am gonna need a table of content with fake data
-// a table of content, adjust the chart and kpi cards
+// Look for any thing that i can improve in this to make a good template for my future dasboards
 
 export default function Home() {
 
