@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
@@ -11,6 +11,11 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -27,11 +32,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} 
-      ${geistMono.variable} h-full antialiased`}
+      ${geistMono.variable} ${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body 
-      className="min-h-full flex flex-col"
+      className="font-sans min-h-full flex flex-col"
       >
         <ThemeProvider 
         attribute="class"
